@@ -9,7 +9,8 @@
   ],
   "host_permissions": [
     "<all_urls>",
-    "http://localhost:3001/*"
+    "http://localhost:3001/*",
+    "https://ohey-production.up.railway.app/*"
   ],
   "content_scripts": [
     {
