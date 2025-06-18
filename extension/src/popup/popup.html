@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChatBrowse Settings</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <!-- Header -->
+    <header class="popup-header">
+      <div class="logo">
+        <span class="logo-icon">💬</span>
+        <h1 class="logo-text">ChatBrowse</h1>
+      </div>
+      <div class="version">v0.1.0</div>
+    </header>
+
+    <!-- Status Section -->
+    <section class="status-section">
+      <div class="status-item">
+        <div class="status-label">Status</div>
+        <div class="status-indicator">
+          <span class="status-dot" id="status-dot"></span>
+          <span class="status-text" id="status-text">Checking...</span>
+        </div>
+      </div>
+      
+      <div class="current-site">
+        <div class="site-info">
+          <span class="site-icon">🌐</span>
+          <span class="site-name" id="current-site">Loading...</span>
+        </div>
+        <div class="site-users">
+          <span id="user-count">0</span> users online
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Toggle -->
+    <section class="toggle-section">
+      <div class="toggle-item">
+        <div class="toggle-info">
+          <div class="toggle-label">Enable ChatBrowse</div>
+          <div class="toggle-description">Show chat widget on websites</div>
+        </div>
+        <label class="toggle-switch">
+          <input type="checkbox" id="extension-toggle" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+    </section>
+
+    <!-- Blocked Sites Section -->
+    <section class="blocked-section">
+      <div class="section-header">
+        <h2 class="section-title">Blocked Sites</h2>
+        <button class="add-button" id="add-site-btn" title="Add blocked site">
+          <span class="add-icon">+</span>
+        </button>
+      </div>
+      
+      <div class="add-site-form" id="add-site-form" style="display: none;">
+        <div class="form-row">
+          <input 
+            type="text" 
+            id="site-input" 
+            placeholder="e.g., *.reddit.com, *banking*, localhost:*"
+            maxlength="200"
+          >
+          <button class="form-button save-btn" id="save-site-btn">Add</button>
+          <button class="form-button cancel-btn" id="cancel-site-btn">Cancel</button>
+        </div>
+        <div class="pattern-help">
+          <div class="help-text">Use * as wildcard. Examples:</div>
+          <div class="examples">
+            <div class="example">
+              <code>*.reddit.com</code> - Block all Reddit subdomains
+            </div>
+            <div class="example">
+              <code>*banking*</code> - Block URLs containing "banking"
+            </div>
+            <div class="example">
+              <code>example.com/admin/*</code> - Block specific paths
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="blocked-list">
+        <div class="empty-state" id="empty-blocked">
+          <div class="empty-icon">🚫</div>
+          <div class="empty-text">No blocked sites</div>
+          <div class="empty-subtext">Add patterns to block ChatBrowse on specific sites</div>
+        </div>
+        <div class="blocked-items" id="blocked-items"></div>
+      </div>
+    </section>
+
+    <!-- Quick Actions -->
+    <section class="actions-section">
+      <div class="action-buttons">
+        <button class="action-btn block-current" id="block-current-btn">
+          <span class="btn-icon">🚫</span>
+          <span class="btn-text">Block Current Site</span>
+        </button>
+        <button class="action-btn refresh-widget" id="refresh-widget-btn">
+          <span class="btn-icon">🔄</span>
+          <span class="btn-text">Refresh Widget</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats-section">
+      <div class="section-header">
+        <h2 class="section-title">Usage Statistics</h2>
+      </div>
+      
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-value" id="sites-visited">0</div>
+          <div class="stat-label">Sites Visited</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value" id="messages-sent">0</div>
+          <div class="stat-label">Messages Sent</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value" id="session-time">0m</div>
+          <div class="stat-label">Session Time</div>
+        </div>
+      </div>
+      
+      <div class="last-used">
+        Last used: <span id="last-used">Never</span>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="popup-footer">
+      <div class="footer-links">
+        <a href="#" class="footer-link" id="help-link">Help</a>
+        <a href="#" class="footer-link" id="feedback-link">Feedback</a>
+        <a href="#" class="footer-link" id="privacy-link">Privacy</a>
+      </div>
+      <div class="footer-text">
+        Made with ❤️ for better browsing
+      </div>
+    </footer>
+  </div>
+
+  <!-- Toast notifications -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
