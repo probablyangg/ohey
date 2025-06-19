@@ -26,7 +26,9 @@ Download the extension: [ohey-extension.zip](https://github.com/probablyangg/ohe
 5. Select the extracted extension folder
 6. The OHey extension will appear in your extensions list
 
-## setup
+---
+
+## dev setup
 
 ```bash
 # Navigate to server directory
