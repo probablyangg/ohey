@@ -4,7 +4,10 @@
 
 <br/>
 
-A Chrome extension that allows users to chat with others viewing the same webpage in real-time.
+A Chrome extension that allows users to chat with others viewing the same webpage in real-time
+
+> Extension is under review for Chrome Web Store.
+
 
 ## screenshots
 ![](./images/screenshot-1.png)
