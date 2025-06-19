@@ -6,7 +6,7 @@
 
 A Chrome extension that allows users to chat with others viewing the same webpage in real-time
 
-> Extension is under review for Chrome Web Store.
+> Extension is under review on Chrome Web Store.
 
 
 ## screenshots
@@ -16,7 +16,7 @@ A Chrome extension that allows users to chat with others viewing the same webpag
 
 ## Download Extension
 
-> Extension is under review for Chrome Web Store.
+> Extension is under review on Chrome Web Store.
 
 
 Download the extension: [ohey-extension.zip](https://github.com/probablyangg/ohey/releases/tag/v0.1.0)
