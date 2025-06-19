@@ -1,6 +1,12 @@
 # OHey
 
+![](./images/banner.png)
 A Chrome extension that allows users to chat with others viewing the same webpage in real-time.
+
+## screenshots
+![](./images/screenshot-1.png)
+<br/>
+![](./images/screenshot-2.png)
 
 ## Download Extension
 
