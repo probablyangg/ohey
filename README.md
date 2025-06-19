@@ -7,7 +7,7 @@ A Chrome extension that allows users to chat with others viewing the same webpag
 > Extension is under review for Chrome Web Store.
 
 
-Download the extension: [ohey-extension.zip](extension/ohey-extension.zip)
+Download the extension: [ohey-extension.zip](https://github.com/probablyangg/ohey/releases/tag/v0.1.0)
 
 **Installation Instructions:**
 1. Download and extract the zip file
