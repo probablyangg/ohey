@@ -4,8 +4,11 @@ export default function Hero() {
       <div className="max-w-6xl mx-auto w-full flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-8 lg:gap-16">
         <div className="flex-1 text-center lg:text-left">
           <h2 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-semibold leading-none mb-4">OHey!</h2>
-          <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl opacity-90 italic leading-tight mb-8">
+          <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl opacity-90 italic leading-tight mb-8 text-gray-300">
             nice to see you
+          </p>
+          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl opacity-90 leading-tight mb-8">
+            A Chrome extension that allows users to chat with others viewing the same webpage in real-time.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <a href="https://github.com/probablyangg/ohey" target="_blank" rel="noopener noreferrer" className="px-6 py-3 sm:px-8 bg-white text-primary rounded-lg text-base sm:text-lg font-medium transition-all hover:bg-gray-50 hover:-translate-y-0.5 w-full sm:w-auto inline-block text-center">
