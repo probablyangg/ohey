@@ -2,6 +2,18 @@
 
 A Chrome extension that allows users to chat with others viewing the same webpage in real-time.
 
+## Download Extension
+
+Download the extension: [ohey-extension.zip](extension/ohey-extension.zip)
+
+**Installation Instructions:**
+1. Download and extract the zip file
+2. Go to `chrome://extensions/` in your browser
+3. Toggle "Developer mode" switch in the top-right corner
+4. Click "Load unpacked" button
+5. Select the extracted extension folder
+6. The OHey extension will appear in your extensions list
+
 ## setup
 
 ```bash
