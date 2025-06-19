@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ChatBrowse Settings</title>
+  <title>OHey Settings</title>
   <link rel="stylesheet" href="popup.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
     <header class="popup-header">
       <div class="logo">
         <span class="logo-icon">💬</span>
-        <h1 class="logo-text">ChatBrowse</h1>
+        <h1 class="logo-text">OHey</h1>
       </div>
       <div class="version">v0.1.0</div>
     </header>
@@ -26,7 +26,7 @@
           <span class="status-text" id="status-text">Checking...</span>
         </div>
       </div>
-      
+
       <div class="current-site">
         <div class="site-info">
           <span class="site-icon">🌐</span>
@@ -42,7 +42,7 @@
     <section class="toggle-section">
       <div class="toggle-item">
         <div class="toggle-info">
-          <div class="toggle-label">Enable ChatBrowse</div>
+          <div class="toggle-label">Enable OHey</div>
           <div class="toggle-description">Show chat widget on websites</div>
         </div>
         <label class="toggle-switch">
@@ -60,12 +60,12 @@
           <span class="add-icon">+</span>
         </button>
       </div>
-      
+
       <div class="add-site-form" id="add-site-form" style="display: none;">
         <div class="form-row">
-          <input 
-            type="text" 
-            id="site-input" 
+          <input
+            type="text"
+            id="site-input"
             placeholder="e.g., *.reddit.com, *banking*, localhost:*"
             maxlength="200"
           >
@@ -92,7 +92,7 @@
         <div class="empty-state" id="empty-blocked">
           <div class="empty-icon">🚫</div>
           <div class="empty-text">No blocked sites</div>
-          <div class="empty-subtext">Add patterns to block ChatBrowse on specific sites</div>
+          <div class="empty-subtext">Add patterns to block OHey on specific sites</div>
         </div>
         <div class="blocked-items" id="blocked-items"></div>
       </div>
@@ -117,7 +117,7 @@
       <div class="section-header">
         <h2 class="section-title">Usage Statistics</h2>
       </div>
-      
+
       <div class="stats-grid">
         <div class="stat-item">
           <div class="stat-value" id="sites-visited">0</div>
@@ -132,7 +132,7 @@
           <div class="stat-label">Session Time</div>
         </div>
       </div>
-      
+
       <div class="last-used">
         Last used: <span id="last-used">Never</span>
       </div>
